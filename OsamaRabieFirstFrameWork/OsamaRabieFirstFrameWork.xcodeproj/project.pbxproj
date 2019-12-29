@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E840C9C223B8921B00CE349B /* OsamaRabieFirstFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = E840C9C023B8921B00CE349B /* OsamaRabieFirstFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E840C9C923B8922900CE349B /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840C9C823B8922900CE349B /* RandomGenerator.swift */; };
+		E8E714D923B8B76600B85A1B /* KnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E714D823B8B76600B85A1B /* KnobView.swift */; };
+		E8E714DB23B8B77000B85A1B /* KnobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E714DA23B8B77000B85A1B /* KnobView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		E840C9C023B8921B00CE349B /* OsamaRabieFirstFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OsamaRabieFirstFrameWork.h; sourceTree = "<group>"; };
 		E840C9C123B8921B00CE349B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E840C9C823B8922900CE349B /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
+		E8E714D823B8B76600B85A1B /* KnobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobView.swift; sourceTree = "<group>"; };
+		E8E714DA23B8B77000B85A1B /* KnobView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnobView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				E840C9C023B8921B00CE349B /* OsamaRabieFirstFrameWork.h */,
 				E840C9C123B8921B00CE349B /* Info.plist */,
 				E840C9C823B8922900CE349B /* RandomGenerator.swift */,
+				E8E714D823B8B76600B85A1B /* KnobView.swift */,
+				E8E714DA23B8B77000B85A1B /* KnobView.xib */,
 			);
 			path = OsamaRabieFirstFrameWork;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E714DB23B8B77000B85A1B /* KnobView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E714D923B8B76600B85A1B /* KnobView.swift in Sources */,
 				E840C9C923B8922900CE349B /* RandomGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
