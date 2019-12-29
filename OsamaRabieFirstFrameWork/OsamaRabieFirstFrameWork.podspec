@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "OsamaRabieFirstFrameWork"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "My First Pod OsamaRabieFirstFrameWork."
   spec.description  = "If this worked, I will be doing much more pods to help everyone out."
   spec.homepage     = "https://github.com/osamagucCitySoc/OsamaRabieFirstFrameWork"
@@ -18,11 +18,11 @@ Pod::Spec.new do |spec|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
  
    spec.platform     = :ios, "11.0"
-   spec.swift_version = "4.0" 
+   spec.swift_version = "4.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source       = { :git => "https://github.com/osamagucCitySoc/OsamaRabieFirstFrameWork.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/osamagucCitySoc/OsamaRabieFirstFrameWork.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
