@@ -27,6 +27,7 @@ public class KnobView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        // YES
         super.init(coder: aDecoder)
         commonInit()
     }
