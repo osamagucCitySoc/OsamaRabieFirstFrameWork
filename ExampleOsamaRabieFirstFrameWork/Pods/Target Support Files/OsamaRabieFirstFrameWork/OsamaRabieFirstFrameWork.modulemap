@@ -1,0 +1,6 @@
+framework module OsamaRabieFirstFrameWork {
+  umbrella header "OsamaRabieFirstFrameWork-umbrella.h"
+
+  export *
+  module * { export * }
+}

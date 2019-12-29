@@ -1,0 +1,16 @@
+PODS:
+  - OsamaRabieFirstFrameWork (1.0.0)
+
+DEPENDENCIES:
+  - OsamaRabieFirstFrameWork (from `/Users/osamarabie/Desktop/OsamaRabieFirstFrameWork/OsamaRabieFirstFrameWork`)
+
+EXTERNAL SOURCES:
+  OsamaRabieFirstFrameWork:
+    :path: "/Users/osamarabie/Desktop/OsamaRabieFirstFrameWork/OsamaRabieFirstFrameWork"
+
+SPEC CHECKSUMS:
+  OsamaRabieFirstFrameWork: f0aecf90e03bc6ba2a2e1db462abf168002f65d4
+
+PODFILE CHECKSUM: b717e9031ebef87572e8bab65a5731c1cbaf1ba6
+
+COCOAPODS: 1.8.4
