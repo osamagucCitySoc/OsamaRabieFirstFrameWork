@@ -9,7 +9,7 @@
 import UIKit
 
 public class KnobView: UIView {
-
+    
     @IBOutlet  weak var progressBar: UIProgressView!
     
     @IBOutlet  weak var resultLabel: UILabel!
@@ -27,20 +27,33 @@ public class KnobView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // YES
+        // latest 1.0.13
         super.init(coder: aDecoder)
         commonInit()
     }
     
     func commonInit()
     {
-        Bundle.main.loadNibNamed("KnobView", owner: self, options: nil)
-        addSubview(contentView)
-        contentView.frame = self.bounds
-        progressBar.setProgress(0, animated: true)
-              resultLabel.text = ""
+        let podBundle = Bundle(for: self.classForCoder)
+        
+        if let bundleURL = podBundle.url(forResource: "OsamaRabieFirstFrameWork", withExtension: "bundle") {
+            if let bundle = Bundle(url: bundleURL) {
+                
+                //let knobNib = UINib(nibName:"" , bundle: bundle)
+                bundle.loadNibNamed("KnobView", owner: self, options: nil)
+                addSubview(contentView)
+                contentView.frame = self.bounds
+                progressBar.setProgress(0, animated: true)
+                resultLabel.text = ""
+                
+            }else {
+                
+                assertionFailure("Could not load the bundle")
+                
+            }
+        }
     }
-  
+    
     
     
     public func start(countingFrom:Float)
@@ -69,11 +82,11 @@ public class KnobView: UIView {
     }
     
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
 }
