@@ -21,18 +21,18 @@ public class KnobView: UIView {
     private var timer:Timer = Timer()
     
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // latest 1.0.13
+        // latest 1.0.15
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    func commonInit()
+    public func commonInit()
     {
         let podBundle = Bundle(for: self.classForCoder)
         
