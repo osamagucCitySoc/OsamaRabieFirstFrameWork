@@ -10,19 +10,36 @@ import UIKit
 
 public class KnobView: UIView {
 
-    @IBOutlet private weak var progressBar: UIProgressView!
+    @IBOutlet  weak var progressBar: UIProgressView!
     
-    @IBOutlet private weak var resultLabel: UILabel!
+    @IBOutlet  weak var resultLabel: UILabel!
+    
+    @IBOutlet var contentView: UIView!
     
     private var countFrom:Float = 0
     
     private var timer:Timer = Timer()
     
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        progressBar.setProgress(0, animated: true)
-        resultLabel.text = ""
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    func commonInit()
+    {
+        Bundle.main.loadNibNamed("KnobView", owner: self, options: nil)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        progressBar.setProgress(0, animated: true)
+              resultLabel.text = ""
+    }
+  
     
     
     public func start(countingFrom:Float)
