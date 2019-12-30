@@ -1,6 +1,6 @@
 {
   "name": "OsamaRabieFirstFrameWork",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "summary": "My First Pod OsamaRabieFirstFrameWork.",
   "description": "If this worked, I will be doing much more pods to help everyone out.",
   "homepage": "https://github.com/osamagucCitySoc/OsamaRabieFirstFrameWork",
@@ -14,11 +14,16 @@
   "swift_versions": "4.0",
   "source": {
     "git": "https://github.com/osamagucCitySoc/OsamaRabieFirstFrameWork.git",
-    "tag": "1.0.0"
+    "tag": "1.2.0"
   },
   "source_files": [
     "OsamaRabieFirstFrameWork",
-    "OsamaRabieFirstFrameWork/**/*.{h,m}"
+    "OsamaRabieFirstFrameWork/**/*.{h,m,swift}"
   ],
+  "resource_bundles": {
+    "OsamaRabieFirstFrameWork": [
+      "OsamaRabieFirstFrameWork/**/*.{storyboard,xib}"
+    ]
+  },
   "swift_version": "4.0"
 }
