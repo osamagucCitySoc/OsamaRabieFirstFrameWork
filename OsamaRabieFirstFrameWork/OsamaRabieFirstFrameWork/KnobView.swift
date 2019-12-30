@@ -27,7 +27,7 @@ public class KnobView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // latest 1.0.17
+        // latest 1.2.0
         super.init(coder: aDecoder)
         commonInit()
     }
